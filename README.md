@@ -1,6 +1,13 @@
 
 ## Usage
-* [Basic tree creation](#basic-tree-creation)
+* ### Tree creation
+  * [Basic example with nodes of strings](#basic-tree-creation)
+  * [Example with nodes of some user-defined type] 
+  * [Tree of nodes having ID]
+  
+* [Searching nodes]
+* [Deleting nodes]
+* [Appending nodes]
 
 ## Basic tree creation
 
@@ -25,5 +32,3 @@
 Output from the object myTree:
 
 ![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/output1.png)
-
-[Full code here](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/Example1.cs).
