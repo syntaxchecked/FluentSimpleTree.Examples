@@ -2,7 +2,7 @@
 ## Usage
 * ### Tree creation
   * [Basic example with nodes of strings](#basic-tree-creation)
-  * [Example with nodes of some user-defined type] 
+  * [Example with nodes of some user-defined type](#example-with-nodes-of-some-user-defined-type) 
   * [Tree of nodes having ID]
   
 * [Searching nodes]
@@ -32,3 +32,8 @@
 Output from the object myTree:
 
 ![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/output1.png)
+
+[Full code here](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/Example1.cs).
+
+## Example with nodes of some user-defined type
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Family_tree.svg/1024px-Family_tree.svg.png)
