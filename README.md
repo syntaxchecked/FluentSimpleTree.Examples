@@ -1,13 +1,20 @@
 
-## How to use FluentSimpleTree package?
+## How to use FluentSimpleTree package
 ### Tree creation
   * [Basic example with nodes of strings](#basic-tree-creation)
   * [Example with nodes of some user-defined type](#example-with-nodes-of-some-user-defined-type) 
   * [Tree of nodes with ID](#tree-of-nodes-with-id)
 
-### Searching nodes
+### Getting nodes
+  * [Getting node by ID]()
+  * [Getting node by predicate]()
+
 ### Deleting nodes
+  * [Deleting node by ID]()
+  * [Deleting node by predicate]()
+
 ### Appending nodes
+  * [Basic example of how to append nodes to another]()
 
 ## Basic tree creation
 
