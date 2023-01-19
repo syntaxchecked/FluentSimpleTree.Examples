@@ -1,13 +1,13 @@
 
-## Usage
-* ### Tree creation
+## How to use FluentSimpleTree package?
+### Tree creation
   * [Basic example with nodes of strings](#basic-tree-creation)
   * [Example with nodes of some user-defined type](#example-with-nodes-of-some-user-defined-type) 
-  * [Tree of nodes having ID]
-  
-* [Searching nodes]
-* [Deleting nodes]
-* [Appending nodes]
+  * [Tree of nodes with ID](#tree-of-nodes-with-id)
+
+### Searching nodes
+### Deleting nodes
+### Appending nodes
 
 ## Basic tree creation
 
@@ -63,3 +63,9 @@ Output from the object myTree:
             .AddChildren(new Person[] { p10, p11, p12 });
 ```
 Output from the object myTree:
+
+![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/output2.png)
+
+[Full code here](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/Example2.cs).
+
+## Tree of nodes with ID
