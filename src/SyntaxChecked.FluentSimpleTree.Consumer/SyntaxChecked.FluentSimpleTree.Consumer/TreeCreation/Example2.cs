@@ -19,9 +19,8 @@ namespace SyntaxChecked.FluentSimpleTree.Consumer.TreeCreation
 
       var myTree = new Tree<Person>(p1);
 
-      var root = myTree.RootNode;
-
-      root
+      myTree
+        .RootNode
         .AddChildren(new Person[] { p2, p3, p4 })[0] //Mary
           .AddChildren(new Person[] { p5, p6 })[0] //Fred
         .Parent //Mary
