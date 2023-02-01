@@ -18,12 +18,12 @@ namespace SyntaxChecked.FluentSimpleTree.Consumer.TreeCreation
       var p12 = new Person("Laura") { Age = 3 };
 
       var myTree = new Tree<Person>(p1);
+      var root = myTree.RootNode; //Lucas
 
-      myTree
-        .RootNode
+      root
         .AddChildren(new Person[] { p2, p3, p4 })[0] //Mary
           .AddChildren(new Person[] { p5, p6 })[0] //Fred
-        .Parent //Mary
+          .Parent //Mary
         .NextSibling //Jason
           .AddChildren(new Person[] { p7, p8, p9 })[1] //Jessica
             .AddChildren(new Person[] { p10, p11, p12 });
