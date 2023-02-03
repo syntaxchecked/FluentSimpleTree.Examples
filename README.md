@@ -90,7 +90,9 @@
 <details>
  <summary>Expand it! >></summary>
  
- <img src="src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/tree_ids.svg" width="75%/">
+ <img src="src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/tree_ids.svg" width="75%"/>
+ 
+ <p></p>
  
  Code:
  ```csharp
@@ -99,7 +101,9 @@
 
        root
          .AddChildren(new[] { ("CEO", "John Smith") })[0] //CEO
-           .AddChildren(new[] { ("VP_Marketing", "Susan Jones"), ("VP_Sales", "Rachel Parker"), ("VP_Production", "Tom Allen") })[0] //VP Marketing
+           .AddChildren(new[] { ("VP_Marketing", "Susan Jones"),
+                                ("VP_Sales", "Rachel Parker"),
+                                ("VP_Production", "Tom Allen") })[0] //VP Marketing
              .AddChildren(new[] { ("Manager1", "Alice Johnson") })[0] //Manager1
              .Parent //VP Marketing
            .NextSibling //VP Sales
