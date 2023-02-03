@@ -17,8 +17,16 @@ namespace SyntaxChecked.FluentSimpleTree.Consumer
       {
         var spaces = new string(' ', node.Level * 2);
 
+        if (node.IsRootNode && node.Data is null)
+          Console.WriteLine($"Id: root, Data: null");
+
         if (node.Data is string)
-          Console.WriteLine(spaces + node.Data);
+        {
+          if (!node.IsRootNode && node.Id != null)
+            Console.WriteLine($"{spaces}Id: {node.Id}, Data: {node.Data}");
+          else
+            Console.WriteLine(spaces + node.Data);
+        }
 
         if (node.Data is Person)
           Console.WriteLine($"{spaces}Name: {(node.Data as Person)!.Name}, Age: {(node.Data as Person)!.Age}");

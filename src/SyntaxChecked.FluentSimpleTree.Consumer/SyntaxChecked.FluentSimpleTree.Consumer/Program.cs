@@ -6,4 +6,5 @@ Example1.Run();
 Console.WriteLine();
 Example2.Run();
 Console.WriteLine();
-//Example3.Run();
+Example3.Run();
+Console.WriteLine();

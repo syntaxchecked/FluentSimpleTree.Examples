@@ -9,7 +9,7 @@ namespace SyntaxChecked.FluentSimpleTree.Consumer.TreeCreation
 
       root
         .AddChildren(new[] { ("CEO", "John Smith") })[0] //CEO
-          .AddChildren(new[] { ("VP Marketing", "Susan Jones"), ("VP Sales", "Rachel Parker"), ("VP Production", "Tom Allen") })[0] //VP Marketing
+          .AddChildren(new[] { ("VP_Marketing", "Susan Jones"), ("VP_Sales", "Rachel Parker"), ("VP_Production", "Tom Allen") })[0] //VP Marketing
             .AddChildren(new[] { ("Manager1", "Alice Johnson") })[0] //Manager1
             .Parent //VP Marketing
           .NextSibling //VP Sales
