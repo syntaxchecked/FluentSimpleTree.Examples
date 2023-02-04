@@ -1,27 +1,8 @@
 
-## How to use FluentSimpleTree package
 ### Tree creation
-  * [Basic example with nodes of strings](#basic-tree-creation)
-  * [Example with nodes of some user-defined type](#example-with-nodes-of-some-user-defined-type) 
-  * [Nodes with IDs](#nodes-with-ids)
-
-### Getting nodes
-  * [By ID]()
-  * [By predicate]()
-
-### Deleting nodes
-  * [By ID]()
-  * [By predicate]()
-
-### Appending nodes
-  * [Basic example of how to append nodes to another]()
-  
-### Simulating DOM (Document Object Model)
-<hr>
-
-## Basic tree creation
 <details>
- <summary>Expand it! >></summary>
+ <summary>Basic example with nodes of strings</summary>
+ <br>
  
  ![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/basictree1.svg)
 
@@ -45,13 +26,12 @@
  ![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/output1.png)
 
  [Full code here](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/Example1.cs).
-</details>
 <hr>
+</details>
 
-## Example with nodes of some user-defined type
 <details>
- <summary>Expand it! >></summary>
- 
+ <summary>Example with nodes of some user-defined type</summary>
+
  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Family_tree.svg/1024px-Family_tree.svg.png" width="60%"/>
 
  Code:
@@ -85,17 +65,16 @@
  ![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/output2.png)
 
  [Full code here](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/Example2.cs).
-</details>
 <hr>
-
-## Nodes with IDs
+</details>
+ 
 <details>
- <summary>Expand it! >></summary>
- 
+ <summary>Nodes with IDs</summary>
+
  <img src="src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/tree_ids.svg" width="75%"/>
- 
+
  <p></p>
- 
+
  Code:
  ```csharp
        var myTree = new Tree<string>();
@@ -116,8 +95,36 @@
  ```
 
  Output from the object myTree:
- 
+
  ![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/output3.png)
 
  [Full code here](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/Example3.cs).
+<hr>
 </details>
+
+### Getting nodes
+<details>
+ <summary>By ID</summary>
+<hr> 
+</details> 
+
+<details>
+ <summary>By predicate</summary>
+<hr> 
+</details> 
+
+### Deleting nodes
+<details>
+ <summary>By ID</summary>
+<hr> 
+</details> 
+
+<details>
+ <summary>By predicate</summary>
+<hr> 
+</details> 
+
+### Appending nodes
+  * Basic example of how to append nodes to another
+  
+### Simulating DOM (Document Object Model)
