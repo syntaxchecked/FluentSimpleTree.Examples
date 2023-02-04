@@ -26,7 +26,7 @@
 <g id="node3" class="node">
 <title>c</title>
 <ellipse fill="none" stroke="#000000" cx="101.9811" cy="-124.2469" rx="87.9723" ry="29.3315"/>
-<text text-anchor="middle" x="101.9811" y="-128.4469" font-family="Times,serif" font-size="14.00" fill="#000000">id: VP Marketing</text>
+<text text-anchor="middle" x="101.9811" y="-128.4469" font-family="Times,serif" font-size="14.00" fill="#000000">id: VP_Marketing</text>
 <text text-anchor="middle" x="101.9811" y="-111.6469" font-family="Times,serif" font-size="14.00" fill="#000000">data: 'Susan Jones'</text>
 </g>
 <!-- b&#45;&#45;c -->
@@ -38,7 +38,7 @@
 <g id="node4" class="node">
 <title>d</title>
 <ellipse fill="none" stroke="#000000" cx="307.9811" cy="-124.2469" rx="95.3278" ry="29.3315"/>
-<text text-anchor="middle" x="307.9811" y="-128.4469" font-family="Times,serif" font-size="14.00" fill="#000000">id: VP Sales</text>
+<text text-anchor="middle" x="307.9811" y="-128.4469" font-family="Times,serif" font-size="14.00" fill="#000000">id: VP_Sales</text>
 <text text-anchor="middle" x="307.9811" y="-111.6469" font-family="Times,serif" font-size="14.00" fill="#000000">data: 'Rachel Parker'</text>
 </g>
 <!-- b&#45;&#45;d -->
@@ -50,7 +50,7 @@
 <g id="node5" class="node">
 <title>e</title>
 <ellipse fill="none" stroke="#000000" cx="511.9811" cy="-124.2469" rx="82.6181" ry="29.3315"/>
-<text text-anchor="middle" x="511.9811" y="-128.4469" font-family="Times,serif" font-size="14.00" fill="#000000">id: VP Production</text>
+<text text-anchor="middle" x="511.9811" y="-128.4469" font-family="Times,serif" font-size="14.00" fill="#000000">id: VP_Production</text>
 <text text-anchor="middle" x="511.9811" y="-111.6469" font-family="Times,serif" font-size="14.00" fill="#000000">data: 'Tom Allen'</text>
 </g>
 <!-- b&#45;&#45;e -->
