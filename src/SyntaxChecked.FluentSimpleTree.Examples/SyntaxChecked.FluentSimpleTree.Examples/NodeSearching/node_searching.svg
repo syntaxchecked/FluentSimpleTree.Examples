@@ -37,7 +37,7 @@
 <!-- d -->
 <g id="node4" class="node">
 <title>d</title>
-<ellipse fill="#00ff00" stroke="#000000" cx="307.9811" cy="-124.2469" rx="95.3278" ry="29.3315"/>
+<ellipse fill="#add8e6" stroke="#000000" cx="307.9811" cy="-124.2469" rx="95.3278" ry="29.3315"/>
 <text text-anchor="middle" x="307.9811" y="-128.4469" font-family="Times,serif" font-size="14.00" fill="#000000">id: VP_Sales</text>
 <text text-anchor="middle" x="307.9811" y="-111.6469" font-family="Times,serif" font-size="14.00" fill="#000000">data: 'Rachel Parker'</text>
 </g>
