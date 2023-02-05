@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer.csproj",
+        "${workspaceFolder}/src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -19,7 +19,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer.csproj",
+        "${workspaceFolder}/src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -33,7 +33,7 @@
         "watch",
         "run",
         "--project",
-        "${workspaceFolder}/src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer.csproj"
+        "${workspaceFolder}/src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples.csproj"
       ],
       "problemMatcher": "$msCompile"
     }
