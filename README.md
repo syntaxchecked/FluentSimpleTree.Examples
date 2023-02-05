@@ -1,10 +1,10 @@
 
-### Tree creation
+### 1 - Tree creation
 <details>
- <summary>Basic example with nodes of strings</summary>
+ <summary>1.1 - Basic example with nodes of strings</summary>
  <br>
  
- ![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/basictree1.svg)
+ ![](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Exmples/TreeCreation/basictree1.svg)
 
  Code:
  ```csharp
@@ -23,15 +23,14 @@
  ```
  Output from the object myTree:
 
- ![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/output1.png)
+ ![](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/output1.png)
 
- [Full code here](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/Example1.cs).
-<hr>
+ [Full code here](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/Example1.cs).
+ <hr>
 </details>
 
 <details>
- <summary>Example with nodes of some user-defined type</summary>
-
+ <summary>1.2 - Example with nodes of some user-defined type</summary>
  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Family_tree.svg/1024px-Family_tree.svg.png" width="60%"/>
 
  Code:
@@ -62,16 +61,15 @@
  ```
  Output from the object myTree:
 
- ![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/output2.png)
+ ![](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/output2.png)
 
- [Full code here](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/Example2.cs).
-<hr>
+ [Full code here](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/Example2.cs).
+ <hr>
 </details>
  
 <details>
- <summary>Nodes with IDs</summary>
-
- <img src="src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/tree_ids.svg" width="75%"/>
+ <summary>1.3 - Nodes with IDs</summary>
+ <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/tree_ids.svg" width="75%"/>
 
  <p></p>
 
@@ -96,35 +94,38 @@
 
  Output from the object myTree:
 
- ![](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/output3.png)
+ ![](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/output3.png)
 
- [Full code here](src/SyntaxChecked.FluentSimpleTree.Consumer/SyntaxChecked.FluentSimpleTree.Consumer/TreeCreation/Example3.cs).
-<hr>
+ [Full code here](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/Example3.cs).
+ <hr>
 </details>
 
-### Getting nodes
+### 2 - Getting nodes
 <details>
- <summary>By ID</summary>
+ <summary>2.1 - By ID</summary>
+ 
+ <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/node_searching.svg" width="75%"/>
+ 
+ <hr>
+</details> 
+
+<details>
+ <summary>2.2 - By predicate</summary>
+<hr> 
+</details> 
+
+### 3 - Deleting nodes
+<details>
+ <summary>3.1 -By ID</summary>
 <hr> 
 </details> 
 
 <details>
- <summary>By predicate</summary>
+ <summary>3.2 -By predicate</summary>
 <hr> 
 </details> 
 
-### Deleting nodes
-<details>
- <summary>By ID</summary>
-<hr> 
-</details> 
-
-<details>
- <summary>By predicate</summary>
-<hr> 
-</details> 
-
-### Appending nodes
-  * Basic example of how to append nodes to another
+### 4 - Appending nodes
+Basic example of how to append a node to another one
   
-### Simulating DOM (Document Object Model)
+### 5- Simulating DOM (Document Object Model)
