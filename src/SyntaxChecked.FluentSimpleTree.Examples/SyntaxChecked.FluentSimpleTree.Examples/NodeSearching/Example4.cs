@@ -21,10 +21,11 @@ namespace SyntaxChecked.FluentSimpleTree.Consumer.NodeSearching
       //You can search the whole tree
       var vp_sales = myTree.GetNodeById("VP_Sales");
 
-      Console.WriteLine($"Id: {vp_sales.Id}, {vp_sales.Data}");
-
       //Or from a specific node
       var manager3 = root.GetDescendant("Manager3");
+
+      if (vp_sales != null)
+        Console.WriteLine($"Id: {vp_sales.Id}, {vp_sales.Data}");
 
       if (manager3 != null)
         Console.WriteLine($"Id: {manager3.Id}, {manager3.Data}");
