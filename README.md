@@ -4,7 +4,7 @@
  <summary>1.1 - Basic example with nodes of strings</summary>
  <br>
  
- ![](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Exmples/TreeCreation/basictree1.svg)
+ ![](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/basictree1.svg)
 
  Code:
  ```csharp
