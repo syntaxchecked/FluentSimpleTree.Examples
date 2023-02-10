@@ -1,9 +1,9 @@
 
 ### 1 - Tree creation
 <details>
- <summary>1.1 - Basic example with nodes of strings</summary>
+ <summary>1.1 - Basic example of Tree&lt;T> where T is string </summary>
  <br>
- 
+
  ![](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/basictree1.svg)
 
  Code:
@@ -30,7 +30,7 @@
 </details>
 
 <details>
- <summary>1.2 - Example with nodes of some user-defined type</summary>
+ <summary>1.2 - Example of Tree&lt;T> where T is a user-defined type</summary>
  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Family_tree.svg/1024px-Family_tree.svg.png" width="60%"/>
 
  Code:
@@ -66,13 +66,15 @@
  [Full code here](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/Example2.cs).
  <hr>
 </details>
- 
+
 <details>
  <summary>1.3 - Nodes with IDs</summary>
+ <br>
+
  <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/tree_ids.svg" width="75%"/>
 
  <p></p>
- 
+
  Code:
  ```csharp
        var myTree = new Tree<string>();
@@ -101,11 +103,13 @@
 
 ### 2 - Getting nodes
 <details>
- <summary>2.1 - By ID</summary> 
+ <summary>2.1 - By ID</summary>
+ <br>
+
  <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/node_searching.svg" width="75%"/>
- 
+
  <p></p>
- 
+
  Code:
  ```csharp
       var myTree = new Tree<string>("a");
@@ -131,30 +135,82 @@
       var manager3 = root.GetDescendant("Manager3");
  ```
  Output:
- 
+
  ![](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/output1.png)
- 
+
  [Full code here](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/Example4.cs).
  <hr>
-</details> 
+</details>
 
 <details>
  <summary>2.2 - By predicate</summary>
-<hr> 
-</details> 
+ <details>
+  <summary>2.2.1 - Tree&lt;T> where T is a value type</summary>
+  <br>
+
+  <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/node_searching_2.svg" width="40%"/>
+
+  <p></p>
+
+  Code:
+  ```csharp
+        var myTree = new Tree<int>(34);
+        var root = myTree.RootNode;
+
+        root
+          .AddChildren(new[] { 21, 13 })[0] //21
+            .AddChildren(new[] { 13, 8 })[0] //13
+              .AddChildren(new[] { 8, 5 })[0] //8
+                .AddChildren(new[] { 5, 3 })[0] //5
+                  .AddChildren(new[] { 3, 2 })[0] //3
+                    .AddChildren(new[] { 2, 1 })[0] //2
+                      .AddChildren(new[] { 1, 1 });
+
+        var oddElements = myTree
+                            .GetNodes(data => data % 2 != 0)
+                            .Select(node => node.Data);
+
+        var EvenElements = myTree
+                            .GetNodes(data => data % 2 == 0)
+                            .Select(node => node.Data);
+
+        foreach (var number in oddElements)
+          Console.Write(number + " ");
+
+        Console.WriteLine();
+
+        foreach (var number in EvenElements)
+          Console.Write(number + " ");
+  ```
+  Output:
+
+  ![](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/output2.png)
+
+  [Full code here](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/Example5.cs).
+
+ </details>
+
+ <details>
+  <summary>2.2.2 - Tree&lt;string></summary>
+ </details>
+ <details>
+  <summary>2.2.3 - Tree&lt;T> where T is a reference type</summary>
+ </details>
+ <hr>
+</details>
 
 ### 3 - Deleting nodes
 <details>
  <summary>3.1 -By ID</summary>
-<hr> 
-</details> 
+<hr>
+</details>
 
 <details>
  <summary>3.2 -By predicate</summary>
-<hr> 
-</details> 
+ <hr>
+</details>
 
 ### 4 - Appending nodes
 Basic example of how to append a node to another one
-  
+
 ### 5- Simulating DOM (Document Object Model)
