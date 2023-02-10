@@ -187,7 +187,7 @@
   ![](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/output2.png)
 
   [Full code here](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/Example5.cs).
-
+  <hr>
  </details>
 
  <details>
@@ -196,7 +196,6 @@
  <details>
   <summary>2.2.3 - Tree&lt;T> where T is a reference type</summary>
  </details>
- <hr>
 </details>
 
 ### 3 - Deleting nodes
