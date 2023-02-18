@@ -5,7 +5,7 @@
 <br>
 <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/basictree1.svg">
 
-<br>
+<p></p>
 
 Code:
 ```csharp
@@ -33,6 +33,8 @@ Output:
 <details>
 <summary>1.2 - Example of Tree&lt;T> where T is a user-defined type</summary>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Family_tree.svg/1024px-Family_tree.svg.png" width="60%"/>
+
+<p></p>
 
 Code:
 ```csharp
@@ -73,7 +75,7 @@ Output:
 <br>
 <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/TreeCreation/tree_ids.svg" width="75%"/>
 
-<br>
+<p></p>
 
 Code:
 ```csharp
@@ -107,7 +109,7 @@ Output:
 <br>
 <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/node_searching.svg" width="75%"/>
 
-<br>
+<p></p>
 
 Code:
 ```csharp
@@ -148,7 +150,7 @@ Output:
   <br>
   <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/node_searching_2.svg" width="40%"/>
 
-  <br>
+  <p></p>
 
   Code:
   ```csharp
@@ -171,14 +173,6 @@ Output:
         var EvenElements = myTree
                             .GetNodes(data => data % 2 == 0)
                             .Select(node => node.Data);
-
-        foreach (var number in oddElements)
-          Console.Write(number + " ");
-
-        Console.WriteLine();
-
-        foreach (var number in EvenElements)
-          Console.Write(number + " ");
   ```
   Output:
 
@@ -193,7 +187,7 @@ Output:
   <br>
   <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/node_searching_3.svg" width="100%"/>
 
-  <br>
+  <p></p>
 
   Code:
   ```csharp
@@ -232,23 +226,14 @@ Output:
 
         var namesWithPrefixM = professorsBranches
                                 .SelectMany(item => item
-                                                    .GetChildren(professorName => professorName.StartsWith("M")));
-
-        Console.WriteLine("Listing professors whose name starts with letter M:\n");
-
-        foreach (var node in namesWithPrefixM)
-          Console.WriteLine(node.Data);
+                                                    .GetChildren(professorName => professorName
+                                                                                    .StartsWith("M")));
 
         var areasBranches = myTree.RootNode.GetDescendants(item => item == "areas");
 
         var namesWithPrefixJ = areasBranches
                                 .SelectMany(item => item
                                                     .GetDescendants(item => item.StartsWith("J")));
-
-        Console.WriteLine("\nListing all people from any area whose name starts with the letter J:\n");
-
-        foreach (var node in namesWithPrefixJ)
-          Console.WriteLine(node.Data);
   ```
   Output:
 
