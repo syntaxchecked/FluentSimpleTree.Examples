@@ -13,6 +13,8 @@ Example3.Run();
 Console.WriteLine();
 Example4.Run();
 Console.WriteLine();
-*/
 Example5.Run();
+Console.WriteLine();
+*/
+Example6.Run();
 Console.WriteLine();
