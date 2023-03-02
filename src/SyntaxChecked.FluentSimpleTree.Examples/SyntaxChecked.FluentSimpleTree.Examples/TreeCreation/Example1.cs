@@ -1,4 +1,4 @@
-namespace SyntaxChecked.FluentSimpleTree.Consumer.TreeCreation
+namespace SyntaxChecked.FluentSimpleTree.Examples.TreeCreation
 {
   public static class Example1
   {

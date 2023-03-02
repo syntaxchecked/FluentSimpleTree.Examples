@@ -1,4 +1,4 @@
-namespace SyntaxChecked.FluentSimpleTree.Consumer.NodeSearching
+namespace SyntaxChecked.FluentSimpleTree.Examples.NodeSearching
 {
   public static class Example4
   {

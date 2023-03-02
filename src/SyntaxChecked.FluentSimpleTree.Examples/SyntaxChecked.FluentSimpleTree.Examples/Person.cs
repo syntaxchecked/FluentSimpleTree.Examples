@@ -1,4 +1,4 @@
-namespace SyntaxChecked.FluentSimpleTree.Consumer.TreeCreation
+namespace SyntaxChecked.FluentSimpleTree.Examples
 {
   public class Person
   {

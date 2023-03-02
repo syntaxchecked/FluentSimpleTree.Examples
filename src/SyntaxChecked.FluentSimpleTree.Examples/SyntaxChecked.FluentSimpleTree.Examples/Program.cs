@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using SyntaxChecked.FluentSimpleTree.Consumer.NodeSearching;
-using SyntaxChecked.FluentSimpleTree.Consumer.TreeCreation;
+﻿using SyntaxChecked.FluentSimpleTree.Examples.TreeCreation;
 using SyntaxChecked.FluentSimpleTree.Examples.NodeSearching;
 
 /*
@@ -15,6 +12,8 @@ Example4.Run();
 Console.WriteLine();
 Example5.Run();
 Console.WriteLine();
-*/
 Example6.Run();
+Console.WriteLine();
+*/
+Example7.Run();
 Console.WriteLine();

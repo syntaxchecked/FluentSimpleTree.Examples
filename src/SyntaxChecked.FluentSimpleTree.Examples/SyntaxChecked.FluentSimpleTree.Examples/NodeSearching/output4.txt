@@ -1,0 +1,107 @@
+Listing all system directories in the tree:
+
+Name : bin
+Path: /bin
+Size: 4096 bytes
+Flags: s
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Name : etc
+Path: /etc
+Size: 4096 bytes
+Flags: s
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Name : lib
+Path: /lib
+Size: 4096 bytes
+Flags: s
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Name : home
+Path: /home
+Size: 4096 bytes
+Flags: s
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Name : init.d
+Path: /etc/init.d
+Size: 4096 bytes
+Flags: s
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Name : udev
+Path: /lib/udev
+Size: 4096 bytes
+Flags: s
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Name : rules.d
+Path: /lib/udev/rules.d
+Size: 4096 bytes
+Flags: s
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Listing shells binaries in the tree:
+
+Name : bash
+Path: /bin/bash
+Size: 1273694 bytes
+Flags: x
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Name : ssh
+Path: /etc/init.d/ssh
+Size: 4096 bytes
+Flags: x
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Listing other executable files in the tree:
+
+Name : cat
+Path: /bin/cat
+Size: 44032 bytes
+Flags: x
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Name : cron
+Path: /etc/init.d/cron
+Size: 3072 bytes
+Flags: x
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Listing device rules files in the tree:
+
+Name : dm
+Path: /lib/udev/rules.d/dm
+Size: 7168 bytes
+Extension: rules
+Flags: d
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Name : crda
+Path: /lib/udev/rules.d/crda
+Size: 69 bytes
+Extension: rules
+Flags: d
+Creation date/time: 2/15/2020 12:00:00 AM
+
+Listing user directories in the tree:
+
+Name : myself
+Path: /home/myself
+Size: 4096 bytes
+Flags: u
+Creation date/time: 3/2/2023 12:00:00 AM
+
+Listing specific user document in the tree:
+
+Name : algebra
+Path: /home/myself/algebra
+Size: 1024000 bytes
+Extension: pdf
+Title: Introduction to Algebra
+Flags: u
+Creation date/time: 3/2/2023 12:00:00 AM
+
+
