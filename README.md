@@ -245,6 +245,48 @@ Output:
 
   <details>
   <summary>2.2.3 - Tree&lt;T> where T is a reference type</summary>
+  <br>
+  <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/node_searching_4.svg" width="85%"/>
+
+  <p></p>
+
+  Code:
+  ````csharp
+      var homeDir = DirTree.RootNode.GetChildren(item => item.Name == "home")[0];
+
+      homeDir
+        .AddChildren(new[] { myDirectory })[0]
+          .AddChildren(new[] { pdfDocument });
+
+      var sysDirs = DirTree.GetNodes(item => item.Name != "/" &&
+                                      item.Type == StorageUnitType.Directory &&
+                                      item.Flags == "s");
+
+      var shBinaries = DirTree.GetNodes(item => item.Name.EndsWith("sh") &&
+                                        item.Type == StorageUnitType.File &&
+                                        item.Flags == "x");
+
+      var utilBinaries = DirTree.GetNodes(item => item.Type == StorageUnitType.File &&
+                                          item.Flags == "x" &&
+                                          (item.Name == "cat" || item.Name == "cron"));
+
+      var configRulesFiles = DirTree.GetNodes(item => item.Type == StorageUnitType.File &&
+                                          item.Flags == "d" &&
+                                          item.Extension?.Contains("rules") == true);
+
+      var userDirs = DirTree.GetNodes(item => item.Type == StorageUnitType.Directory &&
+                                          item.Flags == "u");
+
+      var userDocAlgebra = DirTree.GetNodes(item => item.Type == StorageUnitType.File &&
+                                          item.Flags == "u" &&
+                                          item.Extension?.Contains("pdf") == true &&
+                                          item.Title?.Contains("Algebra") == true);
+  ````
+ Output:
+
+  [output4.txt](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/output4.txt)
+
+  [Full code here](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/Example7.cs).
   <hr>
   </details>
 </details>
