@@ -94,7 +94,7 @@ Size: 4096 bytes
 Flags: u
 Creation date/time: 3/2/2023 12:00:00 AM
 
-Listing specific user document in the tree:
+Listing user specific document in the tree:
 
 Name : algebra
 Path: /home/myself/algebra
