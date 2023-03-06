@@ -320,7 +320,7 @@
   ```
   Output:
 
-  [](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeDeletion/output1.txt)
+  [output1.txt](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeDeletion/output1.txt)
 
   [Full code here](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeDeletion/Example8.cs).
   <hr>
