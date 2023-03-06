@@ -1,0 +1,19 @@
+Tree before node deletion:
+
+Id: root, Data: null
+  Id: CEO, Data: John Smith
+    Id: VP_Marketing, Data: Susan Jones
+      Id: Manager1, Data: Alice Johnson
+    Id: VP_Sales, Data: Rachel Parker
+      Id: Manager2, Data: Michael Gross
+    Id: VP_Production, Data: Tom Allen
+      Id: Manager3, Data: Kathy Roberts
+
+Tree after node deletion:
+
+Id: root, Data: null
+  Id: CEO, Data: John Smith
+    Id: VP_Marketing, Data: Susan Jones
+    Id: VP_Production, Data: Tom Allen
+      Id: Manager3, Data: Kathy Roberts
+

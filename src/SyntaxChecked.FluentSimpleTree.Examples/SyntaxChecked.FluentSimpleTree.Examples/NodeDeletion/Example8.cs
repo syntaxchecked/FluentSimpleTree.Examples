@@ -1,6 +1,11 @@
-namespace SyntaxChecked.FluentSimpleTree.Examples.NodeSearching
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace SyntaxChecked.FluentSimpleTree.Examples.NodeDeletion
 {
-  public static class Example4
+  public static class Example8
   {
     public static void Run()
     {
@@ -18,17 +23,15 @@ namespace SyntaxChecked.FluentSimpleTree.Examples.NodeSearching
           .NextSibling //VP Production
             .AddChildren(new[] { ("Manager3", "Kathy Roberts") }); //Manager3
 
-      //You can search the whole tree
-      var vp_sales = myTree.GetNodeById("VP_Sales");
+      Console.WriteLine("Tree before node deletion:\n");
+      OutputHelper.ToConsole(myTree);
 
-      //Or from a specific node
-      var manager3 = root.GetDescendant("Manager3");
+      root.RemoveDescendant("VP_Sales");
+      root.RemoveDescendant("Manager1");
 
-      if (vp_sales != null)
-        Console.WriteLine($"Id: {vp_sales.Id}, {vp_sales.Data}");
-
-      if (manager3 != null)
-        Console.WriteLine($"Id: {manager3.Id}, {manager3.Data}");
+      Console.WriteLine();
+      Console.WriteLine("Tree after node deletion:\n");
+      OutputHelper.ToConsole(myTree);
     }
   }
 }
