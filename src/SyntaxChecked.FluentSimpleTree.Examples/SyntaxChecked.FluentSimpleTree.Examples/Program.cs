@@ -15,6 +15,8 @@ Example5.Run();
 Console.WriteLine();
 Example6.Run();
 Console.WriteLine();
-*/
 Example8.Run();
+Console.WriteLine();
+*/
+Example9.Run();
 Console.WriteLine();

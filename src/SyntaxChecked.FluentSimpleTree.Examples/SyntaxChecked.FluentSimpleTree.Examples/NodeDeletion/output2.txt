@@ -1,0 +1,27 @@
+Tree before node deletion:
+
+Id: root, Data: null
+  Lucas
+    Mary
+      Fred
+      Jane
+    Jason
+      Sean
+      Jessica
+        Joseph
+        John
+        Jennifer
+      Hannah
+    Peter
+
+Tree after node deletion:
+
+Id: root, Data: null
+  Lucas
+    Mary
+      Fred
+    Jason
+      Sean
+      Hannah
+    Peter
+

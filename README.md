@@ -31,7 +31,7 @@
 </details>
 
 <details>
-  <summary>1.2 - Example of Tree&lt;T> where T is a user-defined type</summary>
+  <summary>1.2 - Example of Tree&lt;T> where T is a class</summary>
   <br>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Family_tree.svg/1024px-Family_tree.svg.png" width="60%" style="background-color:white;">
 
@@ -245,7 +245,7 @@
   </details>
 
   <details>
-  <summary>2.2.3 - Tree&lt;T> where T is a reference type</summary>
+  <summary>2.2.3 - Tree&lt;T> where T is a class</summary>
   <br>
   <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeSearching/node_searching_4.svg" width="85%">
 
@@ -328,6 +328,29 @@
 
 <details>
  <summary>3.2 -By predicate</summary>
+  <br>
+  <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeDeletion/node_deletion_2.svg" width="75%">
+
+  <p></p>
+
+  Code:
+  ```csharp
+      root
+        .AddChildren(new[] { "Lucas" })[0] //Lucas
+          .AddChildren(new[] { "Mary", "Jason", "Peter" })[0] //Mary
+            .AddChildren(new[] { "Fred", "Jane" })[0] //Fred
+            .Parent //Mary
+          .NextSibling //Jason
+            .AddChildren(new[] { "Sean", "Jessica", "Hannah" })[1] //Jessica
+              .AddChildren(new[] { "Joseph", "John", "Jennifer" });
+
+      root.RemoveDescendants(item => item == "Jane" || item.StartsWith("Je"));
+  ```
+  Output:
+
+  [output2.txt](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeDeletion/output2.txt)
+
+  [Full code here](src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/NodeDeletion/Example9.cs).
  <hr>
 </details>
 
