@@ -6,6 +6,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="SyntaxChecked.FluentSimpleTree" Version="1.0.15" />
+    <PackageReference Include="SyntaxChecked.FluentSimpleTree" Version="1.0.16" />
   </ItemGroup>
 </Project>

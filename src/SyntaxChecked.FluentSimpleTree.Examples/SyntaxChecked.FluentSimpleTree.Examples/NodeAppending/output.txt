@@ -1,0 +1,40 @@
+Tree 1 before node removal:
+
+a
+  b
+  c
+    e
+      h
+      i
+    f
+  d
+
+Tree 1 after node removal:
+
+a
+  b
+  c
+    f
+  d
+
+Tree 2 before appending the nodes that were removed from tree 1:
+
+j
+  k
+    m
+    n
+  l
+    o
+
+Tree 2 after node appending:
+
+j
+  k
+    m
+    n
+  l
+    o
+    e
+      h
+      i
+

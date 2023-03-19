@@ -1,6 +1,7 @@
 ﻿using SyntaxChecked.FluentSimpleTree.Examples.TreeCreation;
 using SyntaxChecked.FluentSimpleTree.Examples.NodeSearching;
 using SyntaxChecked.FluentSimpleTree.Examples.NodeDeletion;
+using SyntaxChecked.FluentSimpleTree.Examples.NodeAppending;
 
 /*
 Example1.Run();
@@ -17,6 +18,9 @@ Example6.Run();
 Console.WriteLine();
 Example8.Run();
 Console.WriteLine();
-*/
 Example9.Run();
 Console.WriteLine();
+*/
+Example10.Run();
+Console.WriteLine();
+
