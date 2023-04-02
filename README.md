@@ -397,3 +397,6 @@
 </details>
 
 ### 5- Simulating DOM (Document Object Model)
+<details>
+  <summary>5.1 - Construction of a simple HTML document and manipulation</summary>
+</details>
