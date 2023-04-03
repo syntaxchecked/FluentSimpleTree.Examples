@@ -12,12 +12,10 @@ namespace SyntaxChecked.FluentSimpleTree.Examples.Dom
       htmlElement
         .AddChildren(new[] { new DomElement("head") })[0]
           .AddChildren(new[] {
-            new DomElement("meta", new[] {("charset", "utf-8")}),
+            new DomElement("meta", new[] {("charset", "utf-8")}, null, true),
             new DomElement("title", "HTML Example Page"),
             new DomElement("style",
-                            ".intro-green {" +
-                            "  background-color:green" +
-                            "}"),
+                            ".intro-green { background-color:green; }"),
             new DomElement("script", new[] { ("src", "script.js") })
           });
 
@@ -69,29 +67,25 @@ namespace SyntaxChecked.FluentSimpleTree.Examples.Dom
       var allParagraphs = document.GetNodes(elem => elem.Tag == "p"); //js: document.querySelectorAll("p")
 
       //js: document.getElementsByClassName("intro-green")[0]
-      var header1 = document.GetNodes(elem => elem.Attributes?["class"] == "intro-green")[0];
+      var header1 = document.GetNodes(elem => elem.GetAttribute("class") == "intro-green")[0];
 
       //Adding new CSS class
 
       htmlElement
         .GetDescendants(elem => elem.Tag == "style")[0] //js: document.documentElement.getElementsByTagName("style")[0]
           .Data
-            .Text += "\n.intro-blue {" +
-                      "  background-color:blue" +
-                      "}";
+            .Text += "\n      .intro-blue { background-color:blue; color:white; }";
 
-      header1.Data.Attributes["class"] = "intro-blue"; //js: header1.classList.toggle("intro-blue")
+      header1.Data.SetAttribute("class", "intro-blue"); //js: header1.classList.toggle("intro-blue")
 
       //Changing the style of an element
 
       var welcomeText = document.GetNodeById("welcome-msg");
 
-      welcomeText.Data.Style.BackgroundColor = "yellow";
-      welcomeText.Data.Style.Color = "blue";
+      welcomeText.Data.Style.BackgroundColor = "yellow"; //js: welcomeText.style.backgroundColor = "yellow"
+      welcomeText.Data.Style.Color = "blue"; //js: welcomeText.style.color = "blue"
 
-      //Gerar Output após manipular os elementos
-
-
+      OutputHelper.ToHtmlFile(document);
     }
   }
 }

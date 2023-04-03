@@ -1,9 +1,62 @@
-using SyntaxChecked.FluentSimpleTree.Examples.TreeCreation;
+using SyntaxChecked.FluentSimpleTree.Examples.Dom;
 
 namespace SyntaxChecked.FluentSimpleTree.Examples
 {
   public static class OutputHelper
   {
+    public static void ToHtmlFile(Tree<DomElement> domTree)
+    {
+      using var htmlFile = File.CreateText("output.html");
+
+      ToHtmlFile(new IGenericTreeNode<DomElement>[] { domTree.RootNode }, htmlFile);
+    }
+
+    public static void ToHtmlFile(IGenericTreeNode<DomElement>[] elements, StreamWriter htmlFile)
+    {
+      foreach (var element in elements)
+      {
+        var spaces = new string(' ', element.Level * 2);
+
+        htmlFile.Write(spaces + "<" + element.Data.Tag);
+
+        foreach (var attribute in element.Data.GetAllAttributes())
+          htmlFile.Write($" {attribute.Key}=\"{attribute.Value}\"");
+
+        var style = "";
+
+        if (element.Data.Style.BackgroundColor != null)
+          style = $"background-color:{element.Data.Style.BackgroundColor};";
+
+        if (element.Data.Style.Color != null)
+          style += $"color:{element.Data.Style.Color};";
+
+        if (element.Data.Style.Padding != null)
+          style += $"padding:{element.Data.Style.Padding};";
+
+        if (element.Data.Style.TextAlign != null)
+          style += $"text-align:{element.Data.Style.TextAlign};";
+
+        if (element.Data.Style.Width != null)
+          style += $"width:{element.Data.Style.TextAlign};";
+
+        if (style != "")
+          style = $" style=\"{style}\"";
+
+        htmlFile.WriteLine($"{style}>");
+
+        if (element.Data.Text != null)
+          htmlFile.WriteLine($"{spaces}  {element.Data.Text}");
+
+        var children = element.GetAllChildren();
+
+        if (children.Any())
+          ToHtmlFile(children, htmlFile);
+
+        if (!element.Data.EmptyTag)
+          htmlFile.WriteLine(spaces + "</" + element.Data.Tag + ">");
+      }
+    }
+
     public static void ToConsole<T>(Tree<T> tree)
     {
       var rootNode = tree.RootNode;
