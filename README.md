@@ -400,34 +400,8 @@
 <details>
   <summary>5.1 - Construction of a simple HTML document and DOM manipulation</summary>
   <br>
-
-  ```html
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <title>HTML Example Page</title>
-        <style>
-          .intro-green { background-color:green; }
-          .intro-blue { background-color:blue; color:white; }
-        </style>
-        <script src="script.js"></script>
-      </head>
-      <body>
-        <header>
-          <h1 class="intro-blue">HTML5 Example Page</h1>
-        </header>
-        <p><span style="background-color:yellow;color:blue;">Welcome message</span></p>
-        <nav>
-          Navigation Links
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </body>
-    </html>
-  ```
+  <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/Dom/html-file.svg" width="75%">
+  <p></p>
   <img src="src/SyntaxChecked.FluentSimpleTree.Examples/SyntaxChecked.FluentSimpleTree.Examples/Dom/htmlpage.png">
 
   <br>
