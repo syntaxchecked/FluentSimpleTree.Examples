@@ -31,6 +31,8 @@ namespace SyntaxChecked.FluentSimpleTree.Examples.NodeSearching
 
       foreach (var number in EvenElements)
         Console.Write(number + " ");
+
+      Console.WriteLine();
     }
   }
 }
